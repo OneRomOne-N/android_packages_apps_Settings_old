@@ -33,6 +33,7 @@ import android.widget.Toast;
 
 import com.android.settings.nuclear.tabs.GeneralUI;
 import com.android.settings.nuclear.tabs.LockScreen;
+import com.android.settings.nuclear.tabs.StatusBar;
 import com.android.settings.nuclear.tabs.System;
 import com.android.settings.nuclear.PagerSlidingTabStrip;
 import com.android.settings.R;
@@ -156,10 +157,10 @@ public class NuclearSettings extends SettingsPreferenceFragment {
             super(fm);
             frags[0] = new GeneralUI();
             frags[1] = new LockScreen();
-            /*frags[1] = new StatusBar();
-            frags[2] = new Navigation();
+            frags[2] = new StatusBar();
+            /*frags[2] = new Navigation();
             frags[3] = new Recents();*/
-            frags[2] = new System();
+            frags[3] = new System();
         }
 
         @Override
@@ -184,7 +185,7 @@ public class NuclearSettings extends SettingsPreferenceFragment {
         titleString = new String[]{
                     getString(R.string.generalui_category),
                     getString(R.string.lockscreen_category),
-                    //getString(R.string.statusbar_category),
+                    getString(R.string.statusbar_category),
                     //getString(R.string.navigation_category),
                     //getString(R.string.multitasking_category),
                     getString(R.string.system_category)};
