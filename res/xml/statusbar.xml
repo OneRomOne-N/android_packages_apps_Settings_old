@@ -12,7 +12,14 @@
         android:summary="@string/network_traffic_summary"
         android:title="@string/network_traffic_title" />
 
-                <PreferenceCategory
+    <com.android.settings.nuclear.Preferences.SystemSettingSwitchPreference
+            android:key="battery_save_mode_color"
+            android:title="@string/battery_saver_color_title"
+            android:summary="@string/battery_saver_color_summary"
+            android:icon="@drawable/nuclear_battery_saver_icon"
+            android:defaultValue="true" />
+
+    <PreferenceCategory
             android:key="clock"
             android:title="@string/clock_category" >
 
@@ -21,7 +28,9 @@
             android:title="@string/clock_custom"
     		android:fragment="com.android.settings.nuclear.ClockSettings" />
 
-         </PreferenceCategory>
+    </PreferenceCategory>
+
+
 
 
 </PreferenceScreen>
