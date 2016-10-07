@@ -73,28 +73,28 @@ private static final String NS_ROM_SHARE = "share";
     public boolean onPreferenceChange(Preference preference, Object value) {
         return false;
     }
-    
-//    @Override
-//    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-//        if (preference == mSourceUrl) {
-//            launchUrl("https://github.com/OneRomOne-n");
-//        } else if (preference == mDonateUrl) {
-//            launchUrl("http://paypal.me/TeamNuclear");
-//        } else if (preference == mSourcebaseUrl) {
-//            launchUrl("https://github.com/CyanogenMod");
-//        }  else if (preference.getKey().equals(NS_ROM_SHARE)) {
-//            Intent intent = new Intent();
-//            intent.setAction(Intent.ACTION_SEND);
-//            intent.setType("text/plain");
-//            //intent.putExtra(Intent.EXTRA_TEXT, String.format(
-//            //     getActivity().getString(R.string.share_message)));
-//            //startActivity(Intent.createChooser(intent, getActivity().getString(R.string.share_chooser_title)));
-//        }  else {
-//            // If not handled, let preferences handle it.
-//            return super.onPreferenceTreeClick(preferenceScreen, preference);
-//    }
-//         return true; 
-//    }
+
+    @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference == mSourceUrl) {
+            launchUrl("https://github.com/OneRomOne");
+        } else if (preference == mDonateUrl) {
+            launchUrl("http://paypal.me/TeamNuclear");
+        } else if (preference == mSourcebaseUrl) {
+            launchUrl("https://github.com/CyanogenMod");
+        }  else if (preference.getKey().equals(NS_ROM_SHARE)) {
+            Intent intent = new Intent();
+            intent.setAction(Intent.ACTION_SEND);
+            intent.setType("text/plain");
+            //intent.putExtra(Intent.EXTRA_TEXT, String.format(
+            //     getActivity().getString(R.string.share_message)));
+            //startActivity(Intent.createChooser(intent, getActivity().getString(R.string.share_chooser_title)));
+        }  else {
+            // If not handled, let preferences handle it.
+            return super.onPreferenceTreeClick(preference);
+    }
+         return true; 
+    }
     private void launchUrl(String url) {
         Uri uriUrl = Uri.parse(url);
         Intent donate = new Intent(Intent.ACTION_VIEW, uriUrl);
