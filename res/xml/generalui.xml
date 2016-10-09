@@ -7,11 +7,11 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <!-- gesture_anywhere -->
-        <PreferenceScreen
-            android:key="gesture_anywhere"
-            android:fragment="com.android.settings.nucleartweaks.gestureanywhere.GestureAnywhereSettings"
-            android:title="@string/gesture_anywhere_title">
-            </PreferenceScreen>    
+    <PreferenceScreen
+        android:key="gesture_anywhere"
+        android:fragment="com.android.settings.nucleartweaks.gestureanywhere.GestureAnywhereSettings"
+        android:title="@string/gesture_anywhere_title">
+        </PreferenceScreen>    
 
     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="show_su_indicator"

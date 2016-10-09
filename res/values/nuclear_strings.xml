@@ -159,4 +159,7 @@
     <string name="changelog_crdroid_title">Changelog</string>
     <string name="changelog_crdroid_error">Unable to load changelog</string>
 
+    <string name="double_tap_sleep_anywhere_title">Double Tap Sleep LockScreen</string>
+    <string name="double_tap_sleep_anywhere_summary">Double tap on the top third or the bottom shortcut area to sleep</string>
+
 </resources>
