@@ -8,7 +8,7 @@
 
     <!-- Tabs -->
     <string name="generalui_category">Основные настройки</string>
-    <string name="statusbar_category">Статусбарr</string>
+    <string name="statusbar_category">Статусбар</string>
     <string name="navigation_category">Кнопки</string>
     <string name="multitasking_category">Последние приложения</string>
     <string name="system_category">Система</string>
