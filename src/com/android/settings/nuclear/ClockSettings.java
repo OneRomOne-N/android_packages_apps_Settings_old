@@ -38,7 +38,7 @@ import android.widget.EditText;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.R;
-import com.android.settings.SeekBarPreference;
+import com.android.settings.nuclear.SeekBarPreference;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import java.util.ArrayList;
@@ -158,14 +158,14 @@ public class ClockSettings extends SettingsPreferenceFragment
         mFontStyle = (ListPreference) findPreference(PREF_FONT_STYLE);
         mFontStyle.setOnPreferenceChangeListener(this);
         mFontStyle.setValue(Integer.toString(Settings.System.getInt(getActivity()
-                        .getContentResolver(), Settings.System.STATUSBAR_CLOCK_FONT_STYLE,
+                .getContentResolver(), Settings.System.STATUSBAR_CLOCK_FONT_STYLE,
                 0)));
         mFontStyle.setSummary(mFontStyle.getEntry());
 
         mStatusBarClockFontSize = (SeekBarPreference) findPreference(PREF_STATUS_BAR_CLOCK_FONT_SIZE);
         int size = Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUSBAR_CLOCK_FONT_SIZE, 14);
-        mStatusBarClockFontSize.setProgress(size);
+        mStatusBarClockFontSize.setValue(size);
         mStatusBarClockFontSize.setOnPreferenceChangeListener(this);
 
         setHasOptionsMenu(true);
@@ -175,7 +175,7 @@ public class ClockSettings extends SettingsPreferenceFragment
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.RESURRECTED;
+        return MetricsEvent.NUCLEAR;
     }
 
 
@@ -276,12 +276,11 @@ public class ClockSettings extends SettingsPreferenceFragment
             } else {
                 if ((String) newValue != null) {
                     Settings.System.putString(getActivity().getContentResolver(),
-                            Settings.System.STATUS_BAR_DATE_FORMAT, (String) newValue);
+                        Settings.System.STATUS_BAR_DATE_FORMAT, (String) newValue);
                 }
             }
             return true;
-        }
-        else if (preference == mFontStyle) {
+        } else if (preference == mFontStyle) {
             int val = Integer.parseInt((String) newValue);
             int index = mFontStyle.findIndexOfValue((String) newValue);
             Settings.System.putInt(getActivity().getContentResolver(),

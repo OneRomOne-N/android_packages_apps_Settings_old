@@ -233,5 +233,18 @@
         <string name="clock_font_notoserif_bold">NotoSerif Bold</string>
         <string name="clock_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
         <string name="clock_font_size_title">Font size</string>
+
+        <!-- General -->
+    <string name="ok">Okay</string>
+    <string name="reset">Reset</string>
+    <string name="default_string">Default</string>
+    <string name="add">Add</string>
+    <string name="enabled">Enabled</string>
+    <string name="choose_app">Choose application</string>
+    <string name="help">Help</string>
+    <string name="reset_message">Reset all entries to default?</string>
+    <string name="attention">Attention</string>
+    <string name="reset">Reset</string>
+    <string name="restart_systemui">Restart UI</string>    
         
 </resources>
