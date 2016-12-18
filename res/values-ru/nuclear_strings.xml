@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-	<!-- Nuclear custom settings main -->
+    <!-- Nuclear custom settings main -->
     <string name="nuclear_activity_title">Настройки Nuclear</string>
     <string name="nuclear_title">Твики Nuclear</string>
     <string name="nuclear_settings_title">Категории</string>
 
     <!-- Tabs -->
     <string name="generalui_category">Основные настройки</string>
-    <string name="statusbar_category">Статусбар</string>
+    <string name="statusbar_category">Строка состояния</string>
     <string name="navigation_category">Кнопки</string>
     <string name="multitasking_category">Последние приложения</string>
     <string name="system_category">Система</string>
@@ -24,7 +24,7 @@
     <string name="nucleartweaks_dialog_toast">ЧИТАТЬ ВСЕ ЭТО!</string>
 
     <!-- Network traffic -->
-   <string name="network_traffic_title">Сетевой трафик</string>
+    <string name="network_traffic_title">Сетевой трафик</string>
     <string name="show_network_traffic_state">Отображение сетевого трафика</string>
     <string name="network_traffic_summary">Включить различные варианты сетевого трафика в строке состояния</string>
     <string name="show_network_traffic_unit">Единицы измерения</string>
@@ -150,7 +150,7 @@
     <string name="ns_sourcebase">CyanogenMod</string>
     <string name="ns_sourcebase_sumary">https://github.com/CyanogenMod</string>
 
-	<!-- Superuser indicator on status bar -->
+    <!-- Superuser indicator on status bar -->
     <string name="su_indicator">Индикатор суперпользователя</string>
     <string name="su_indicator_summary_on">Индикатор Суперпользователя  виден , когда сессия активна</string>
     <string name="su_indicator_summary_off">Переключите чтобы показать индикатор суперпользователя , когда сессия активна</string>
@@ -170,5 +170,76 @@
     <string name="show_cpu_info">Показывать информацию о CPU</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Экранное наложение отображает информацию о CPU</string>
+   
+    <!--Clock & Date Category-->
+    <string name="clock_settings_title">Настройки часов</string>
+    <string name="status_bar_clock_category">Часы</string>
+    <string name="status_bar_date_title">Дата</string>
+    <string name="status_bar_clock_style_title">Стиль часов</string>
+    <string name="status_bar_clock_style_right">Справа</string>
+    <string name="status_bar_clock_style_left">Слева</string>
+    <string name="status_bar_clock_style_center">По центру</string>
+    <string name="status_bar_clock_style_hidden">Скрыто</string>
+    <string name="clock_date_position">Расположение даты</string>
+    <string name="clock_date_right">Справа от часов</string>
+    <string name="clock_date_left">Слева от часов</string>
+    <string name="status_bar_am_pm_title">AM/PM стиль</string>
+    <string name="status_bar_am_pm_info">24-часовой формат часов включен</string>
+    <string name="status_bar_am_pm_normal">Нормальный</string>
+    <string name="status_bar_am_pm_small">Маленький</string>
+    <string name="status_bar_am_pm_hidden">Скрыто</string>
+    <string name="status_bar_date_none">Скрыто (По умолчанию)</string>
+    <string name="status_bar_date_small">Маленький</string>
+    <string name="status_bar_date_normal">Нормальный</string>
+    <string name="status_bar_date_format_title">Формат даты</string>
+    <string name="status_bar_date_style">Стиль даты</string>
+    <string name="status_bar_date_style_normal">Нормальный</string>
+    <string name="status_bar_date_style_lowercase">Строчные</string>
+    <string name="status_bar_date_style_uppercase">Заглавные</string>
+    <string name="status_bar_date_format_custom">Настраиваемый формат java</string>
+    <string name="status_bar_date_string_edittext_title">Должно быть в формате даты напр. MM/dd/yy</string>
+    <string name="status_bar_date_string_edittext_summary">Ввод строки</string>
+    <string name="clock_category">Часы</string>
+    <string name="clock_custom">Настройки часов</string>
+    <string name="clock_font_style_title">Шрифт</string>
+    <string name="clock_font_normal">Нормальный</string>
+    <string name="clock_font_italic">Курсивный</string>
+    <string name="clock_font_bold">Полужирный</string>
+    <string name="clock_font_bold_italic">Полужирный курсивный</string>
+    <string name="clock_font_light">Легкий</string>
+    <string name="clock_font_light_italic">Легкий курсивный</string>
+    <string name="clock_font_thin">Тонкий</string>
+    <string name="clock_font_thin_italic">Тонкий курсивный</string>
+    <string name="clock_font_condensed">Condensed</string>
+    <string name="clock_font_condensed_italic">Condensed курсивный</string>
+    <string name="clock_font_condensed_light">Condensed легкий</string>
+    <string name="clock_font_condensed_light_italic">Condensed легкий курсивный</string>
+    <string name="clock_font_condensed_bold">Condensed полужирный</string>
+    <string name="clock_font_condensed_bold_italic">Condensed полужирный курсивный</string>
+    <string name="clock_font_medium">Средний</string>
+    <string name="clock_font_medium_italic">Средний курсивный</string>
+    <string name="clock_font_black">Черный</string>
+    <string name="clock_font_black_italic">Черный курсивный</string>
+    <string name="clock_font_dancingscript">DancingScript</string>
+    <string name="clock_font_dancingscript_bold">DancingScript полужирный</string>
+    <string name="clock_font_comingsoon">ComingSoon</string>
+    <string name="clock_font_notoserif">NotoSerif Нормальный</string>
+    <string name="clock_font_notoserif_italic">NotoSerif курсивный</string>
+    <string name="clock_font_notoserif_bold">NotoSerif полужирный</string>
+    <string name="clock_font_notoserif_bold_italic">NotoSerif полужирный курсивный</string>
+    <string name="clock_font_size_title">Размер шрифта</string>
+
+    <!-- General -->
+    <string name="ok">Хорошо</string>
+    <string name="reset">Сброс</string>
+    <string name="default_string">По умолчанию</string>
+    <string name="add">Добавить</string>
+    <string name="enabled">Включено</string>
+    <string name="choose_app">Выбрать приложение</string>
+    <string name="help">Помощь</string>
+    <string name="reset_message">Сбросить все значения по умолчанию?</string>
+    <string name="attention">Внимание</string>
+    <string name="reset">Перезагрузка</string>
+    <string name="restart_systemui">Перезапуск UI</string>
 
 </resources>
