@@ -16,7 +16,6 @@
             android:key="battery_save_mode_color"
             android:title="@string/battery_saver_color_title"
             android:summary="@string/battery_saver_color_summary"
-            android:icon="@drawable/nuclear_battery_saver_icon"
             android:defaultValue="true" />
 
     <PreferenceCategory
