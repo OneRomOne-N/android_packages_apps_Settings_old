@@ -241,5 +241,9 @@
     <string name="attention">Внимание</string>
     <string name="reset">Перезагрузка</string>
     <string name="restart_systemui">Перезапуск UI</string>
+    
+    <!-- Battery saver color -->
+    <string name="battery_saver_color_title">Цвет предупреждения</string>
+    <string name="battery_saver_color_summary">Включить окрашивание панели навигации в оранжевый цвет при активации режима энергосбережения</string>
 
 </resources>
